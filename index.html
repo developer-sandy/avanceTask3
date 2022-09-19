@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/155ad7575b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</head>
+<body class="bg-light">
+  <div class="preloader">
+    <div class="counter">0</div>
+  </div>
+    <div class="container-fluid h-size">
+  <div class="header">
+    <nav id="navbar-example2" class="navbar bg-success p-2 text-white px-3 mb-3">
+      <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa-solid fa-bars"></i></button>
+
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title bg-success" id="offcanvasWithBothOptionsLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <div class="link-items-space zoom-animation"><a class="link-items" href="#scrollspyHeading1">About</a></div>
+            <div class="link-items-space zoom-animation"><a class="link-items" href="#scrollspyHeading2">Employee</a></div>
+            <div class="link-items-space zoom-animation"><a class="link-items" href="#scrollspyHeading3">Progress</a></div>
+            <div class="link-items-space zoom-animation"><a class="link-items" href="#scrollspyHeading4">Client</a></div>
+            <div class="link-items-space zoom-animation"><a class="link-items" href="#scrollspyHeading5">Branch</a></div>
+          </div>
+        </div>
+      </div>
+      
+     <a class="navbar-brand"  href="#">
+      <a class="navbar-brand" id="cmpyname" href="#"><b>Avance TechLabs</b></a><img src="./Assets/images/logo.png" alt="Logo" width="35" height="35">
+      </a>
+        
+       
+      </nav>
+    </div>
+</div>
+
+<div class="container-fluid head-1">
+<div class="row ani-foot">
+    <div class="col-md-6">
+        <div class="back-img">
+            <img src="./Assets/images/digital-transformation-animate.svg" height="500" width="700" alt="">
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h1 class="comp-name"><b>Welcome to </b><b class="bg-success p-2 text-white name-1">Avance TechLabs</b></h1>
+        <h2 class="comp-details">We are team of talanted designers making web and mobile apps</h2>
+        <button type="button" class="btn btn-success btn-lg bt-get ">GET STARTED</button>
+    </div>
+</div>
+</div>
+
+<div class="container-fluid" id="scrollspyHeading1">
+<h1><b class="bg-success p-2 text-white abt-1">ABOUT</b></h1>
+
+<div class="row">
+   
+    <div class="col-md-6">
+        <h1 class="comp-head"><b>WE ARE THE BEST WEB AND MOBILE APP DEVELOPMENT AGENCY IN BANGALORE</b></h1>
+        <h5 class="abt-2"><b>WHY CHOOSE US</b></h5>
+        <h6 class="abt-2-1">Avance TechLabs will never stick bigger, unfathomable terms in any conversation which some firms use to propel their business. Our transparency is the key to all communications.When it comes to services, we indulge in a lot of things that appeal to people over the globe.</h6>
+        <h5 class="abt-3"><b>WHY ARE WE BETTER THAN OUR COMPETITORS</b></h5>
+        <h6 class="abt-3-1">Our team is more likely to lean on to a work fueled side rather than the fancy side, which is the term some web and mobile app development agencies trap clients under.</h6>
+        <h6 class="abt-4">Avance TechLabs is surat based IT company that provides a wide range of IT services globally, with experience of several years and extensive workforce of employees.</h6>
+    </div>
+    <div class="col-md-6">
+        <div class="back-img">
+            <img src="./Assets/images/about.jpg" height="500" width="700" alt="about">
+        </div>
+    </div>
+</div>
+</div>
+       
+  <div class="container-fluid  landingpage" id="scrollspyHeading2">
+    
+    <h1><b class="bg-success p-2 text-white emp-1">Employee Table</b></h1>
+    <table id="example" class="table table-striped table-hover  p-2 text-white" style="width:100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile Number</th>
+                <th>Status</th>
+                <th>Action</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tiger Nixon</td>
+                <td data-bs-toggle="popover" data-bs-title="Email" data-bs-content="Verification Successfully Completed.">SystemArchitect@gmail.com</td>
+                <td>9942245221</td>
+                <td>Active</td>
+                <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Action Completed">
+                  Action
+                </button></td>
+               
+            </tr>
+            <tr>
+                <td>Garrett Winters</td>
+                <td data-bs-toggle="popover" data-bs-title="Email" data-bs-content="Verification Successfully Completed.">Accountant@gmail.com</td>
+                <td>9944076993</td>
+                <td>Active</td>
+                <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Action Completed">
+                  Action
+                </button></td>
+               
+            </tr>
+            <tr>
+                <td>Ashton Cox</td>
+                <td data-bs-toggle="popover" data-bs-title="Email" data-bs-content="Verification Successfully Completed.">JuniorTechnicalAuthor@gmail.com</td>
+                <td>9842321908</td>
+                <td>Active</td>
+                <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Action Completed">
+                  Action
+                </button></td>
+               
+            </tr>
+            <tr>
+                <td>Cedric Kelly</td>
+                <td data-bs-toggle="popover" data-bs-title="Email" data-bs-content="Verification Successfully Completed.">SeniorJavascriptDeveloper@gmail.com</td>
+                <td>6633998855</td>
+                <td>Active</td>
+                <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Action Completed">
+                  Action
+                </button></td>
+                
+            </tr>
+            <tr>
+                <td>Airi Satou</td>
+                <td data-bs-toggle="popover" data-bs-title="Email" data-bs-content="Verification Successfully Completed.">Accountant@gmail.com</td>
+                <td>7788996655</td>
+                <td>InActive</td>
+                <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Action Completed">
+                  Action
+                </button></td>
+                
+            </tr>
+            <tr>
+                <td>Brielle Williamson</td>
+                <td data-bs-toggle="popover" data-bs-title="Email" data-bs-content="Verification Successfully Completed.">IntegrationSpecialist@gmail.com</td>
+                <td>8899663322</td>
+                <td>Active</td>
+                <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Action Completed">
+                  Action
+                </button></td>
+                
+            </tr>
+            <tr>
+                <td>Herrod Chandler</td>
+                <td data-bs-toggle="popover" data-bs-title="Email" data-bs-content="Verification Successfully Completed.">SalesAssistant@gmail.com</td>
+                <td>9955112233</td>
+                <td>InActive</td>
+                <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Action Completed">
+                  Action
+                </button></td>
+                
+            </tr>
+            <tr>
+                <td>Rhona Davidson</td>
+                <td data-bs-toggle="popover" data-bs-title="Email" data-bs-content="Verification Successfully Completed.">IntegrationSpecialist@gmail.com</td>
+                <td>7788992233</td>
+                <td>InActive</td>
+                <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Action Completed">
+                  Action
+                </button></td>
+                
+            </tr>
+            <tr>
+                <td>Colleen Hurst</td>
+                <td data-bs-toggle="popover" data-bs-title="Email" data-bs-content="Verification Successfully Completed.">JavascriptDeveloper@gmail.com</td>
+                <td>7755331155</td>
+                <td>Active</td>
+                <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Action Completed">
+                  Action
+                </button></td>
+                
+            </tr>
+            <tr>
+                <td>Sonya Frost</td>
+                <td data-bs-toggle="popover" data-bs-title="Email" data-bs-content="Verification Successfully Completed.">SoftwareEngineer@gmail.com</td>
+                <td>9955117755</td>
+                <td>Active</td>
+                <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Action Completed">
+                  Action
+                </button></td>
+                
+            </tr>
+            <tr>
+                <td>Jena Gaines</td>
+                <td data-bs-toggle="popover" data-bs-title="Email" data-bs-content="Verification Successfully Completed.">OfficeManager@gmail.com</td>
+                <td>9396989592</td>
+                <td>Active</td>
+                <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Action Completed">
+                  Action
+                </button></td>
+                
+            </tr>
+            <tr>
+                <td>Quinn Flynn</td>
+                <td data-bs-toggle="popover" data-bs-title="Email" data-bs-content="Verification Successfully Completed.">SupportLead@gmail.com</td>
+                <td>7578797473</td>
+                <td>Active</td>
+                <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Action Completed">
+                  Action
+                </button></td>
+                
+            </tr>
+            <tr>
+                <td>Charde Marshall</td>
+                <td data-bs-toggle="popover" data-bs-title="Email" data-bs-content="Verification Successfully Completed.">RegionalDirector@gmail.com</td>
+                <td>8586848789</td>
+                <td>InActive</td>
+                <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Action Completed">
+                  Action
+                </button></td>
+                
+            </tr>
+            <tr>
+                <td>Haley Kennedy</td>
+                <td data-bs-toggle="popover" data-bs-title="Email" data-bs-content="Verification Successfully Completed.">SeniorMarketingDesigner@gmail.com</td>
+                <td>6362616569</td>
+                <td>Active</td>
+                <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Action Completed">
+                  Action
+                </button></td>
+                
+            </tr>
+            <tr>
+                <td>Tatyana Fitzpatrick</td>
+                <td data-bs-toggle="popover" data-bs-title="Email" data-bs-content="Verification Successfully Completed.">RegionalDirector@gmail.com</td>
+                <td>7778889996</td>
+                <td>InActive</td>
+                <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Action Completed">
+                  Action
+                </button></td>
+                
+            </tr>
+            <tr>
+                <td>Michael Silva</td>
+                <td data-bs-toggle="popover" data-bs-title="Email" data-bs-content="Verification Successfully Completed.">MarketingDesigner@gmail.com</td>
+                <td>9998887775</td>
+                <td>Active</td>
+                <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Action Completed">
+                  Action
+                </button></td>
+                
+            </tr>
+            <tr>
+                <td>Paul Byrd</td>
+                <td data-bs-toggle="popover" data-bs-title="Email" data-bs-content="Verification Successfully Completed.">ChiefFinancialOfficer(CFO)@gmail.com</td>
+                <td>9938827712</td>
+                <td>InActive</td>
+                <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Action Completed">
+                  Action
+                </button></td>
+               
+            </tr>
+            <tr>
+                <td>Gloria Little</td>
+                <td data-bs-toggle="popover" data-bs-title="Email" data-bs-content="Verification Successfully Completed.">SystemsAdministrator@gmail.com</td>
+                <td>8828818878</td>
+                <td>InActive</td>
+                <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Action Completed">
+                  Action
+                </button></td>
+                
+            </tr>
+            <tr>
+                <td>Bradley Greer</td>
+                <td data-bs-toggle="popover" data-bs-title="Email" data-bs-content="Verification Successfully Completed.">SoftwareEngineer@gmail.com</td>
+                <td>7717727736</td>
+                <td>InActive</td>
+                <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Action Completed">
+                  Action
+                </button></td>
+                
+            </tr>
+            <tr>
+                <td>Dai Rios</td>
+                <td data-bs-toggle="popover" data-bs-title="Email" data-bs-content="Verification Successfully Completed.">PersonnelLead@gmail.com</td>
+                <td>9874563210</td>
+                <td>InActive</td>
+                <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Action Completed">
+                  Action
+                </button></td>
+                
+            </tr>
+            <tr>
+                <td>Jenette Caldwell</td>
+                <td data-bs-toggle="popover" data-bs-title="Email" data-bs-content="Verification Successfully Completed.">DevelopmentLead@gmail.com</td>
+                <td>7744112233</td>
+                <td>InActive</td>
+                <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Action Completed">
+                  Action
+                </button></td>
+                
+            </tr>
+            <tr>
+                <td>Yuri Berry</td>
+                <td data-bs-toggle="popover" data-bs-title="Email" data-bs-content="Verification Successfully Completed.">ChiefMarketingOfficer(CMO)@gmail.com</td>
+                <td>8855223366</td>
+                <td>InActive</td>
+                <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Action Completed">
+                  Action
+                </button></td>
+               
+            </tr>
+            <tr>
+                <td>Caesar Vance</td>
+                <td data-bs-toggle="popover" data-bs-title="Email" data-bs-content="Verification Successfully Completed.">Pre-SalesSupport@gmail.com</td>
+                <td>9966332255</td>
+                <td>InActive</td>
+                <td><button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Action Completed">
+                  Action
+                </button></td>
+                
+            </tr>
+       
+          
+        </tbody>
+        
+    </table>
+
+
+  </div>
+
+  <div class="container pro-bar" id="scrollspyHeading3">
+
+    <div class="row">
+        <div class="col-md-6">
+           
+            <h6>ANDROID</h6>
+            <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+              </div><br>
+              <h6>LARAVEL</h6>
+              <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+              </div><br>
+              <h6>JAVASCRIPT</h6>
+              <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+              </div>
+            
+        </div>
+        <div class="col-md-6">
+           <h6>PHP</h6>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+              </div><br>
+            <h6>WORDPRESS/CMS</h6>
+              <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+              </div><br>
+              <h6>IOS</h6>
+              <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+              </div>
+
+        </div>
+    </div>
+  </div>
+ 
+
+  <div class="container car-mid" id="scrollspyHeading4">
+
+  <div class="main-carousel">
+    <div class="cell">
+        <div class="card" style="width: 18rem; margin-left: 120px;">
+            <img src="./Assets/images/testimonials-1.jpg" class="card-img-top" alt="Amit">
+            <div class="card-body">
+              <h5 class="card-title">Amit Yadav</h5>
+              <h6>CEO & Founder at Dechcept</h6>
+              <p class="card-text">"Great professional. Amazing guy. Leader in Android app development. All the great whishes for your future endeavors."</p>
+              
+            </div>
+          </div>
+    </div>
+  
+    <div class="cell">
+        <div class="card" style="width: 18rem; margin-left: 120px;">
+            <img src="./Assets/images/testimonials-2.jpg" class="card-img-top" alt="Amit">
+            <div class="card-body">
+              <h5 class="card-title">Amit Yadav</h5>
+              <h6>CEO & Founder at Dechcept</h6>
+              <p class="card-text">"Great professional. Amazing guy. Leader in Android app development. All the great whishes for your future endeavors."</p>
+              
+            </div>
+          </div>
+    </div>
+     
+    <div class="cell">
+        <div class="card" style="width: 18rem; margin-left: 120px;">
+            <img src="./Assets/images/testimonials-3.jpg" class="card-img-top" alt="Amit">
+            <div class="card-body">
+              <h5 class="card-title">Amit Yadav</h5>
+              <h6>CEO & Founder at Dechcept</h6>
+              <p class="card-text">"Great professional. Amazing guy. Leader in Android app development. All the great whishes for your future endeavors."</p>
+              
+            </div>
+          </div>
+    </div>
+
+    <div class="cell">
+        <div class="card" style="width: 18rem; margin-left: 120px;">
+            <img src="./Assets/images/testimonials-1.jpg" class="card-img-top" alt="Amit">
+            <div class="card-body">
+              <h5 class="card-title">Amit Yadav</h5>
+              <h6>CEO & Founder at Dechcept</h6>
+              <p class="card-text">"Great professional. Amazing guy. Leader in Android app development. All the great whishes for your future endeavors."</p>
+              
+            </div>
+          </div>
+    </div>
+  
+    <div class="cell">
+        <div class="card" style="width: 18rem; margin-left: 120px;">
+            <img src="./Assets/images/testimonials-2.jpg" class="card-img-top" alt="Amit">
+            <div class="card-body">
+              <h5 class="card-title">Amit Yadav</h5>
+              <h6>CEO & Founder at Dechcept</h6>
+              <p class="card-text">"Great professional. Amazing guy. Leader in Android app development. All the great whishes for your future endeavors."</p>
+              
+            </div>
+          </div>
+    </div>
+     
+    <div class="cell">
+        <div class="card" style="width: 18rem; margin-left: 120px;">
+            <img src="./Assets/images/testimonials-3.jpg" class="card-img-top" alt="Amit">
+            <div class="card-body">
+              <h5 class="card-title">Amit Yadav</h5>
+              <h6>CEO & Founder at Dechcept</h6>
+              <p class="card-text">"Great professional. Amazing guy. Leader in Android app development. All the great whishes for your future endeavors."</p>
+              
+            </div>
+          </div>
+    </div>
+
+    </div>
+    </div>
+
+    <div class="container-fluid foot text-center" id="scrollspyHeading5">
+     
+      <div class="row">
+        <div class="col-md-4 sm-12 c-1">
+            <h4><b>Avance TechLabs</b></h4>
+            <h5><b>Banglore :</b></h5>
+            <h6>22, 2nd Floor, 2nd Main Rd.,</h6>
+            <h6>Kasturi Nagar,</h6>
+            <h6>Bangalore, Karnataka 560039</h6>
+            <h5><b>Surat :</b></h5>
+            <h6>B-302, Sicilia Business Hub,</h6>
+            <h6>Bhaktinandan Chowk, Mota Varachha,</h6>
+            <h6>Surat, Gujarat 394101</h6>
+            <h6><b>EMAIL: </b>hello@avancetechlabs.com</h6>
+        </div>
+        <div class="col-md-4 sm-12 c-2">
+          <h4><b>Our Services</b></h4> 
+          <h6>Mobile App Development</h6>
+          <h6>Web Development</h6>
+          <h6>Product Management</h6>
+          <h6>Marketing</h6>
+          <h6>Graphic Design</h6>
+
+        </div>
+        <div class="col-md-4 sm-12 c-3">
+          <h4><b>Our Social Networks</b></h4>
+          <a style="padding-left: 10px;" href='#'></a><i class="fa-brands fa-facebook-f fa-1x"></i>
+          <a style="padding-left: 10px;" href='#'></a><i class="fa-brands fa-instagram fa-1x"></i>
+          <a style="padding-left: 10px;" href='#'></a><i class="fa-brands fa-linkedin-in fa-1x"></i>
+          <a style="padding-left: 10px;" href='#'></a><i class="fa-brands fa-twitter fa-1x"></i>
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <footer class="foot-one text-center">
+      <span>© Copyright <b>Avance TechLabs.</b> All Rights Reserved</span>
+      <span>Designed by <b>Sandy Selva</b></span>
+    </footer>
+  
+
+
+
+    
+        
+    
+    
+
+    
+
+      
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+<script>  	
+    $(document).ready(function () {
+    $('#example').DataTable();
+    });
+</script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script type="text/javascript">
+  $('.main-carousel').flickity({
+// options
+cellAlign: 'left',
+wrapAround:true,
+freeScroll: true
+});
+
+
+</script>
+<script type="text/javascript">
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+</script>
+<script type="text/javascript">
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+<script type="text/javascript">
+  function counter(){
+    var count = setInterval(function(){
+      var c = parseInt($('.counter').text());
+      $('.counter').text((++c).toString());
+      if (c == 100){
+        clearInterval(count);
+        $('.counter').addClass('hide')
+        $('.preloader').addClass('active')
+      }
+    },60)
+  }
+  counter()
+</script>
+
+</body>
+</html>
